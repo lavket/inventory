@@ -78,6 +78,12 @@
             </li>
           <?php //endif; ?>
 
+            <li id="vendorNav">
+              <a href="<?php echo base_url('uom/') ?>">
+                <i class="fa fa-files-o"></i> <span>Unit Of Measurement</span>
+              </a>
+            </li>
+
           <?php //if(in_array('createStore', $user_permission) || in_array('updateStore', $user_permission) || in_array('viewStore', $user_permission) || in_array('deleteStore', $user_permission)): ?>
             <li id="storeNav">
               <a href="<?php echo base_url('stores/') ?>">

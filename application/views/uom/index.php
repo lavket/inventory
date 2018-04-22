@@ -82,7 +82,7 @@
         <div class="modal-body">
 
           <div class="form-group">
-            <label for="brand_name">uom Name</label>
+            <label for="brand_name">Uom Name</label>
             <input type="text" class="form-control" id="uom_name" name="uom_name" placeholder="Enter uom name" autocomplete="off">
           </div>
           <div class="form-group">

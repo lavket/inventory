@@ -120,6 +120,19 @@
             </li>
           <?php //endif; ?>
 
+          <li class="treeview" id="mainGstNav">
+            <a href="#">
+              <i class="fa fa-cube"></i>
+              <span>Vendor GST Account</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+                <li id="addGstNav"><a href="<?php echo base_url('gst/create') ?>"><i class="fa fa-circle-o"></i> Add Vendor GST</a></li>
+              <li id="manageGstNav"><a href="<?php echo base_url('gst') ?>"><i class="fa fa-circle-o"></i> Manage Vendor GST</a></li>
+            </ul>
+          </li>
 
           <?php //if(in_array('createOrder', $user_permission) || in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
             <li class="treeview" id="mainOrdersNav">

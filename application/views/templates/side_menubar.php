@@ -84,6 +84,52 @@
               </a>
             </li>
 
+            <li id="productsNav">
+              <a href="<?php echo base_url('products/') ?>">
+                <i class="fa fa-files-o"></i> <span>Products</span>
+              </a>
+            </li>
+
+            <li id="colorNav">
+              <a href="<?php echo base_url('color/') ?>">
+                <i class="fa fa-files-o"></i> <span>Color</span>
+              </a>
+            </li>
+
+            <li id="sizeNav">
+              <a href="<?php echo base_url('size/') ?>">
+                <i class="fa fa-files-o"></i> <span>Size</span>
+              </a>
+            </li>
+
+            <li class="treeview" id="mainGstNav">
+              <a href="#">
+                <i class="fa fa-cube"></i>
+                <span>Vendor GST Account</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                  <li id="addGstNav"><a href="<?php echo base_url('gst/create') ?>"><i class="fa fa-circle-o"></i> Add Vendor GST</a></li>
+                <li id="manageGstNav"><a href="<?php echo base_url('gst') ?>"><i class="fa fa-circle-o"></i> Manage Vendor GST</a></li>
+              </ul>
+            </li>
+
+            <li class="treeview" id="mainInventoryNav">
+              <a href="#">
+                <i class="fa fa-cube"></i>
+                <span>Add Stock</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                  <li id="addInventoryNav"><a href="<?php echo base_url('inventory/create') ?>"><i class="fa fa-circle-o"></i> Add Stock</a></li>
+                <li id="manageInventoryNav"><a href="<?php echo base_url('inventory') ?>"><i class="fa fa-circle-o"></i> Manage Stock</a></li>
+              </ul>
+            </li>
+
           <?php //if(in_array('createStore', $user_permission) || in_array('updateStore', $user_permission) || in_array('viewStore', $user_permission) || in_array('deleteStore', $user_permission)): ?>
             <li id="storeNav">
               <a href="<?php echo base_url('stores/') ?>">
@@ -99,40 +145,6 @@
             </a>
           </li>
           <?php //endif; ?>
-
-          <?php //if(in_array('createProduct', $user_permission) || in_array('updateProduct', $user_permission) || in_array('viewProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
-            <li class="treeview" id="mainProductNav">
-              <a href="#">
-                <i class="fa fa-cube"></i>
-                <span>Products</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <?php //if(in_array('createProduct', $user_permission)): ?>
-                  <li id="addProductNav"><a href="<?php echo base_url('products/create') ?>"><i class="fa fa-circle-o"></i> Add Product</a></li>
-                <?php //endif; ?>
-                <?php //if(in_array('updateProduct', $user_permission) || in_array('viewProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
-                <li id="manageProductNav"><a href="<?php echo base_url('products') ?>"><i class="fa fa-circle-o"></i> Manage Products</a></li>
-                <?php //endif; ?>
-              </ul>
-            </li>
-          <?php //endif; ?>
-
-          <li class="treeview" id="mainGstNav">
-            <a href="#">
-              <i class="fa fa-cube"></i>
-              <span>Vendor GST Account</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-                <li id="addGstNav"><a href="<?php echo base_url('gst/create') ?>"><i class="fa fa-circle-o"></i> Add Vendor GST</a></li>
-              <li id="manageGstNav"><a href="<?php echo base_url('gst') ?>"><i class="fa fa-circle-o"></i> Manage Vendor GST</a></li>
-            </ul>
-          </li>
 
           <?php //if(in_array('createOrder', $user_permission) || in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
             <li class="treeview" id="mainOrdersNav">

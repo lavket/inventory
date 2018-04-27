@@ -119,7 +119,7 @@
             <li class="treeview" id="mainInventoryNav">
               <a href="#">
                 <i class="fa fa-cube"></i>
-                <span>Add Stock</span>
+                <span>Inventory</span>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
                 </span>
